@@ -1,0 +1,13 @@
+name: use echo action
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mkSpace/echo@master
+        with:
+          say: Hi Jaemin!!!
