@@ -2,12 +2,12 @@ name: use echo action
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - uses: mkSpace/echo@master
+      - uses: mkSpace/echo@main
         with:
           say: Hi Jaemin!!!
